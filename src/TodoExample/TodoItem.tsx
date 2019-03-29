@@ -37,7 +37,7 @@ export interface TodoItemProps {
   onDelete: (id: string) => void;
 }
 
-const TodoItem: React.FunctionComponent<TodoItemProps> = props => (
+const TodoItem = (props: TodoItemProps) => (
   <Item key={props.todo.id}>
     <Checkbox 
       id={props.todo.id}
